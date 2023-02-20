@@ -1,0 +1,121 @@
+.main-nav {
+  display: flex;
+  text-decoration: none;
+  order: 1;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    order: 0;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("/img/menu/menu-open.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+
+  &:hover {
+    color: $basic-primary;
+    fill: $basic-primary;
+  }
+
+  &:focus {
+    color: $basic-primary;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $basic-secondry;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  width: 60px;
+  height: 60px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("/img/menu/menu-close.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1;
+
+  &:hover {
+    color: $basic-primary;
+    fill: $basic-primary;
+  }
+
+  &:focus {
+    color: $basic-primary;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $basic-secondry;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-nav--closed .main-nav__wrapper {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__wrapper {
+  background-color: $color-default-white;
+  width: 100vw;
+  position: absolute;
+  top: 60px;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    display: contents;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: contents;
+    padding-top: 18px;
+    background-color: transparent;
+    z-index: 1;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  display: block;
+  position: static;
+  width: 320px;
+  margin-left: -20px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin-left: 0;
+  }
+}

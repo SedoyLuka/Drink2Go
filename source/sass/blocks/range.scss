@@ -1,0 +1,139 @@
+.range {
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 116px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: -4px;
+  }
+}
+
+.range__name {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+  }
+}
+
+.range__scale {
+  position: relative;
+  width: 270px;
+  height: 4px;
+  background-color: $light-grey;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 220px;
+    height: 2px;
+    margin-bottom: 27px;
+    padding-left: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 281px;
+  }
+}
+
+.range__bar {
+  position: absolute;
+  height: 4px;
+  background-color: $primary-lighter;
+  width: 240px;
+
+  @media (min-width: $tablet-width) {
+    width: 188px;
+    top: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 276px;
+  }
+}
+
+.range__toggle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: $color-default-white;
+  border-color: $primary-lighter;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range__toggle-min {
+  top: -10px;
+}
+
+.range__toggle-max {
+  top: -10px;
+  left: 236px;
+
+  @media (min-width: $tablet-width) {
+    top: -10px;
+    left: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 272px;
+  }
+}
+
+.range__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 18px;
+  border: 2px solid $color-default-white;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    padding-left: 3px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    width: 318px;
+  }
+}
+
+.range__input {
+  width: 118px;
+  padding: 5px;
+  font: inherit;
+  border: 2px solid $primary-lighter;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 90px;
+    padding-left: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 133px;
+  }
+}
+
+.range__dash {
+  margin: 0px 19px;
+  color: $basic-grey;
+  width: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0px 16px;
+  }
+}

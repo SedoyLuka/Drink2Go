@@ -1,0 +1,40 @@
+.page {
+  margin: 0;
+  padding: 0;
+  background-color: $color-default-white;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $desktop-width) {
+    min-width: 1200px;
+  }
+}
+
+.page__body {
+  width: 320px;
+  min-height: 100%;
+  font-family: $font-family-main;
+  color: $basic-black;
+  background-color: $color-default-white;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0 auto;
+    width: 1440px;
+  }
+}
+
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}

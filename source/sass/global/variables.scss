@@ -1,0 +1,29 @@
+// Fonts
+
+$font-family-main: "Montserrat", "Arial", sans-serif;
+
+// Default
+
+$color-default-black: #000000;
+$color-default-white: #ffffff;
+
+// Color
+
+$basic-grey: #bdbdbd;
+$basic-black: #333333;
+$basic-primary: #7859cf;
+$basic-secondry: #f0ebff;
+$primary-lighter: #9070ec;
+$primary-darken: #593cac;
+$light-grey: #e2e2e2;
+$bg-grey: #f8f8f8;
+$bg-flat: #f3ebe1;
+$bg-lavander: #eae6fc;
+$bg-espresso: #e5e6e8;
+$primary-opacity: fade-out($basic-primary, 0.75);
+
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;

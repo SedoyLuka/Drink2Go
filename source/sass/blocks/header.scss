@@ -1,0 +1,45 @@
+.header__wrapper {
+  min-width: 320px;
+  min-height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 80px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+  }
+}
+
+.header__main-logo {
+  @media (min-width: $desktop-width) {
+    margin-top: 6px;
+    margin-right: 20px;
+  }
+}
+
+.header__main-logo-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    margin-right: 176px;
+  }
+}
+
+.header__main-logo-description {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+    margin: 0;
+  }
+}

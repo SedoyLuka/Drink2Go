@@ -1,0 +1,150 @@
+.pagination {
+  width: 100%;
+  margin-bottom: 45px;
+  min-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 101px;
+  }
+}
+
+.pagination__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    margin-right: -20px;
+  }
+}
+
+.pagination__item {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: $color-default-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: 40px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: $primary-lighter;
+    color: $color-default-white;
+  }
+
+  &:active {
+    background-color: $primary-darken;
+  }
+
+  & .pagination__btn:disabled {
+    background-color: $light-grey;
+  }
+
+  &--active {
+    background-color: $bg-grey;
+
+    @media (min-width: $tablet-width) {
+      min-width: 80px;
+    }
+  }
+
+  &--active:hover,
+  &--active:focus-visible,
+  &--active:active {
+    background-color: $bg-grey;
+  }
+}
+
+.pagination__link {
+  padding: 9px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: $basic-primary;
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    color: $color-default-white;
+  }
+}
+
+.pagination__item--active .pagination__link {
+  color: $basic-black;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.pagination__btn {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover .pagination__btn-icon,
+  &:focus-visible.pagination__btn-icon,
+  &:active .pagination__btn-icon,
+  &:disabled .pagination__btn-icon {
+    fill: $color-default-white;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 144px;
+  }
+}
+
+.pagination__btn--prev {
+
+  @media (min-width: $tablet-width) {
+    margin-right: -6px;
+  }
+}
+
+.pagination__btn-icon {
+  fill: $basic-primary;
+
+  &--next {
+    transform: rotate(180deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.pagination__btn-text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-family: $font-family-main;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    color: $basic-primary;
+    padding-top: 2px;
+  }
+
+  .pagination__item:hover &,
+  .pagination__item:focus-visible &,
+  .pagination__item:active & {
+    color: $color-default-white;
+  }
+}

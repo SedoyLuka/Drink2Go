@@ -1,0 +1,160 @@
+.country__title {
+  font-size: 16px;
+  line-height: 24px;
+  color: $basic-black;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 4px;
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 2px;
+  }
+}
+
+.country__list {
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 24px;
+    list-style-type: none;
+
+    @media (min-width: $tablet-width) {
+        width: 214px;
+        margin: 0;
+        padding-left: 2px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 38px;
+    }
+}
+
+.country__item {
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic-black;
+    margin-bottom: 21px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 19px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 20px;
+    }
+}
+
+.country__item-label {
+    position: relative;
+}
+
+.country__item-mark {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 42px;
+    height: 24px;
+    background: $basic-grey;
+    border-radius: 12px;
+    border: none;
+}
+
+.country__item-text {
+  display: inline-block;
+  padding-left: 52px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+  }
+}
+
+
+.country__item-mark {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 42px;
+    height: 24px;
+    background: $basic-grey;
+    border-radius: 12px;
+    border: none;
+}
+
+.control__label-checkbox {
+    display: inline-block;
+    padding-left: 52px;
+}
+
+.country__item-mark::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 2px;
+    top: 2px;
+    background: $color-default-white;
+    border-radius: 50%;
+    border: 0;
+}
+
+.control__input[type="checkbox"]:checked+.country__item-mark {
+    width: 42px;
+    height: 24px;
+    background: $basic-primary;
+    border-radius: 12px;
+    border: none;
+}
+
+.control__input[type="checkbox"]:checked+.country__item-mark::before {
+    left: 20px;
+    top: 2px;
+}
+
+
+.control__input[type="checkbox"]:not(:disabled)+.country__item-mark:hover {
+    box-sizing: border-box;
+    background-color: rgba(120, 89, 207, 0.25);
+    border: 2px solid $basic-primary;
+}
+
+.control__input[type="checkbox"]:not(:disabled)+.country__item-mark:hover::before {
+    left: 0;
+    top: 0;
+}
+
+.control__input[type="checkbox"]:checked:not(:disabled)+.country__item-mark:hover::before {
+    left: 18px;
+    top: 0;
+}
+
+.control__input[type="checkbox"]:checked:focus-visible+.country__item-mark {
+    &--switch {
+        outline: 2px solid $basic-primary;
+        background-color: rgba(120, 89, 207, 0.25);
+        outline-offset: -2px;
+        transition: none;
+    }
+}
+
+.country__item-input:focus+.country__item-mark {
+    &--switch {
+        outline: 2px solid $basic-primary;
+        background-color: rgba(120, 89, 207, 0.25);
+        outline-offset: -2px;
+        transition: none;
+    }
+}

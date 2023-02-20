@@ -1,0 +1,36 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.button {
+  color: $color-default-white;
+  background-color: $basic-primary;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+    outline: 0;
+  }
+
+  &:active {
+    background-color: $primary-darken;
+  }
+
+  &:disabled {
+    background-color: $basic-grey;
+  }
+}
