@@ -261,7 +261,7 @@
 
   &:hover,
   &:focus-visible {
-    background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(90deg, $color-default-white 0%, rgba(255, 255, 255, 0) 100%);
   }
 
   &:active {

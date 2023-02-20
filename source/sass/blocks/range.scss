@@ -129,11 +129,11 @@
 }
 
 .range__dash {
-  margin: 0px 19px;
+  margin: 0 19px;
   color: $basic-grey;
   width: 4px;
 
   @media (min-width: $tablet-width) {
-    margin: 0px 16px;
+    margin: 0 16px;
   }
 }
