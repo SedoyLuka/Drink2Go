@@ -48,7 +48,7 @@
     line-height: 64px;
     letter-spacing: 1.4px;
   }
- 
+
   @media (min-width: $desktop-width) {
     margin-bottom: 104px;
     letter-spacing: 1.4px;
@@ -73,7 +73,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -112,7 +112,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-  line-height: 24px;
+    line-height: 24px;
   }
 }
 
@@ -139,7 +139,6 @@
 }
 
 .advantages__item-speed {
-  
   @media (min-width: $desktop-width) {
     align-items: center;
   }
@@ -155,7 +154,7 @@
   width: 52px;
   height: 56px;
   background-size: contain;
-  
+
   @media (min-width: $tablet-width) {
     left: 14px;
     top: 59px;
@@ -173,6 +172,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 60px;
   }
+
   @media (min-width: $desktop-width) {
     align-items: center;
     padding-top: 52px;
@@ -219,7 +219,7 @@
   width: 52px;
   height: 56px;
   background-size: contain;
-  
+
   @media (min-width: $tablet-width) {
     left: 18px;
     top: 54px;

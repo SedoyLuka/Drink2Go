@@ -59,7 +59,7 @@
 
 .milk__item-text {
   display: inline-block;
-  padding-left: 35px;  
+  padding-left: 35px;
 
   @media (min-width: $tablet-width) {
     padding-left: 35px;
@@ -98,15 +98,15 @@
 .milk__item-input[type="radio"]:checked + .milk__item-mark {
   border: 2px solid $basic-primary;
 }
-  
+
 .milk__item-input[type="radio"]:not(:disabled) + .milk__item-mark:hover {
   border: 2px solid $basic-primary;
 }
-  
+
 .milk__item-input[type="radio"]:focus-visible + .milk__item-mark::before {
   background-color: rgba(120, 89, 207, 0.25);
 }
-  
+
 .milk__item-input:focus-visible:not(:checked) + .milk__item-mark::before {
   background-color: rgba(120, 89, 207, 0.25);
 }

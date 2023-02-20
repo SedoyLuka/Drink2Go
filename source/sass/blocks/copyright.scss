@@ -22,11 +22,10 @@
   }
 }
 
-.copyright:before {
-
+.copyright::before {
   @media (max-width: $mobile-width-only) {
     position: absolute;
-    content: '';
+    content: "";
     top: 4px;
     right: -20px;
     width: 320px;
